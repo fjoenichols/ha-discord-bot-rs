@@ -1,7 +1,7 @@
 FROM rust:1.87 as builder
 
 WORKDIR /app
-COPY Cargo.toml Cargo.lock ./
+COPY Cargo.toml ./
 COPY src/ ./src/
 
 # Build the application
